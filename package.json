@@ -1,0 +1,25 @@
+{
+  "fitbit": {
+    "appUUID": "d04a3f1b-058e-4182-b3de-788f8dc4ff3e",
+    "appType": "app",
+    "appDisplayName": "Melbourne Bus",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#607d8b",
+    "requestedPermissions": [
+      "access_location",
+      "access_internet"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Melbourne Bus"
+      }
+    }
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~1.0.0"
+  }
+}
