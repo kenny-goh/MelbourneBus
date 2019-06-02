@@ -1,0 +1,42 @@
+text {
+  font-size: 25;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-length: 25;
+  text-overflow: ellipsis;
+}
+
+textarea {
+  font-size: 12;
+  font-family: System-Regular;
+  font-weight: regular;
+}
+
+
+.item-header     { x: 0; y: 0; width: 100%; height: 30 }
+.item            { x: 0; y: 0; width: 100%; height: 36%; }
+.item-footer     { x: 0; y: 0; width: 100%; height: 30;  }
+
+
+.tile-divider-bottom {
+  x: 0;
+  y: 100%+10;
+  width: 100%;
+  height: 1;
+  fill: #A0A0A0;
+}
+
+.status {
+  text-anchor: middle;
+  display-align: before;
+  x: 5%;
+  y: 5%;
+  width: 90%;
+  height: 90%;
+  text-length:512;
+  font-size: 32;
+  fill: white;
+}
+
+
+#spinner { x: 50%-25; y: 50%-25; width: 50; height: 50; fill: fb-white; }

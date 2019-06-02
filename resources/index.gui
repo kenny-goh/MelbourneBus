@@ -1,0 +1,132 @@
+<svg>
+  <use id="spinner" href="#spinner" />
+  <textarea id="status" class="status"></textarea>
+  <use id="container" href="#panoramaview" display="none">
+    <use id="screen1" href="#panoramaview-item">
+    <symbol id="tile-stop" focusable="false" pointer-events="visible" system-events="all">
+      <rect id="stop-background" height="80%" />
+      <use id="route_image" href="#static-image" x="0%+17" y="57" height="28" width="28">
+        <set href="image" attributeName="href" to="icon.png"/>
+      </use>  
+      <text id="destination" x="5" y="40" fill="white"></text>
+      <text id="distance"  x="55"  y="78" font-size="20" fill="red"></text>  
+      <rect id="tile-divider-bottom" class="tile-divider-bottom" />
+      <rect id="touch-me" pointer-events="all" x="0" y="0" width="100%"
+              height="100%-2" opacity="0" />
+    </symbol>
+
+    <use id="stopList" href="#tile-list" height="100%" width="100%" font-size="16" >
+      <var id="reorder-enabled" value="0"/>
+      <var id="separator-height-bottom" value="2"/>
+
+      <use id="stop-0" href="#tile-list-item" class="item">
+        <use href="#tile-stop" />
+      </use>
+      <use id="stop-1" href="#tile-list-item" class="item">
+        <use href="#tile-stop" />
+      </use>
+      <use id="stop-2" href="#tile-list-item" class="item">
+        <use href="#tile-stop" />
+      </use>
+      <use id="stop-3" href="#tile-list-item" class="item">
+        <use href="#tile-stop" />
+      </use>
+      <use id="stop-4" href="#tile-list-item" class="item">
+        <use href="#tile-stop" />
+      </use> 
+      <use id="stop-5" href="#tile-list-item" class="item">
+        <use href="#tile-stop" />
+      </use>
+      <use id="stop-6" href="#tile-list-item" class="item">
+        <use href="#tile-stop" />
+      </use> 
+     <use id="stop-7" href="#tile-list-item" class="item">
+        <use href="#tile-stop" />
+      </use> 
+    </use>
+  
+    </use>
+    <use id="screen2" href="#panoramaview-item">
+     <symbol id="tile-dept" focusable="false" pointer-events="visible"
+      system-events="all">
+      <rect id="dept-background" height="80%" />
+      <use id="route_image" href="#static-image" x="0%+17" y="57" height="28" width="28">
+        <set href="image" attributeName="href" to=""/>
+      </use>  
+      <text id="destName" x="5" y="40" fill="white"></text>       
+       <text id="destETA" x="55"   y="78" font-size="20" fill="red"></text>
+       <text id="destRouteName" x="100%-55" y="78" fill="yellow"></text>
+       <rect id="tile-divider-bottom" class="tile-divider-bottom" />
+      <rect id="touch-me" pointer-events="all" x="0" y="0" width="100%"
+              height="100%-2" opacity="0" />
+    </symbol>
+
+    <use id="deptList" href="#tile-list" height="100%" width="100%" font-size="16" >
+      <var id="reorder-enabled" value="0"/>
+      <var id="separator-height-bottom" value="2"/>
+
+      <use id="dept-0" href="#tile-list-item" class="item">
+        <use href="#tile-dept" />
+      </use>
+      <use id="dept-1" href="#tile-list-item" class="item">
+        <use href="#tile-dept" />
+      </use>
+      <use id="dept-2" href="#tile-list-item" class="item">
+        <use href="#tile-dept" />
+      </use>
+      <use id="dept-3" href="#tile-list-item" class="item">
+        <use href="#tile-dept" />
+      </use>
+      <use id="dept-4" href="#tile-list-item" class="item">
+        <use href="#tile-dept" />
+      </use> 
+      <use id="dept-5" href="#tile-list-item" class="item">
+        <use href="#tile-dept" />
+      </use>
+      <use id="dept-6" href="#tile-list-item" class="item">
+        <use href="#tile-dept" />
+      </use> 
+      <use id="dept-7" href="#tile-list-item" class="item">
+        <use href="#tile-dept" />
+      </use>
+    </use>
+
+    </use>
+      <use id="pagination-dots" href="#pagination-widget" y="8">
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-highlight-dot" />
+    </use>
+    
+  </use>
+  
+  <svg id="popup" display="none">
+    <!-- Black background -->
+    <rect class="full-size" fill="fb-black" />
+
+    <!-- Title and text -->
+    <use id="popupText" href="#mixed-text-center-mid" class="dialog-mixed-text" fill="fb-white">
+      <set href="#top-padding" attributeName="display" to="none" />
+      <set id="popupTitle" href="#header/text" attributeName="text-buffer" to="" />
+      <set href="#header/text" attributeName="fill" to="fb-magenta"/>
+      <set href="#copy/text" attributeName="text-buffer" to="" />
+      <set href="#bottom-padding" attributeName="display" to="none" />
+      <!-- Additional properties -->
+      <set href="#header/text" attributeName="text-length" to="128" />
+      <!-- Additional properties -->
+      <set href="#copy/text" attributeName="text-length" to="128" />
+    </use>
+
+    <!-- Left button -->
+    <use id="btnLeft" class="dialog-half-button-left" href="#square-button-neutral">
+      <set href="#text" attributeName="text-buffer" to="Reload" />
+      <set href="#text" attributeName="text-anchor" to="middle" />
+    </use>
+
+    <!-- Right button -->
+    <use id="btnRight" class="dialog-half-button-right" href="#square-button-negative">
+      <set href="#text" attributeName="text-buffer" to="Exit" />
+      <set href="#text" attributeName="text-anchor" to="middle" />
+    </use>
+  </svg>
+</svg>
